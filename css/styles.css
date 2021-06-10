@@ -39,7 +39,7 @@
 }
 
 .hero video {
-    width: 100%;
+    max-width: -webkit-fill-available;
     height: 100%;
     position: absolute;
     top: 0;
