@@ -54,14 +54,23 @@ html {
 }
 
 .hero-logo {
+    display: flex;
     margin-left: 1em;
     margin-top: 2em;
     text-align: left;
     z-index: 20;
 }
 
-.hero-logo_icon{
+.hero-logo_icon {
     width: 100px;
+}
+
+.hero-logo_text {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    margin-left: 1em;
+    text-transform: uppercase;
 }
 
 .caption {
