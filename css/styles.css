@@ -2,6 +2,7 @@
 /* ===== UNIVERSAL ===== */
 /*=======================*/
 html {
+    box-sizing: border-box;
     scroll-behavior: smooth;
   }
   
@@ -127,15 +128,31 @@ html {
 	transition: all 0.4s ease 0s;
 }
 
+.subscribe-form {
+    display: none;
+    height: 100vh;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100vw;
+    z-index: 25;
+}
+
 /*=======================*/
 /* ======== FORM ======= */
 /*=======================*/
 #_form_3_ {
     color: #222; 
-    display: none;
     font-size: .8rem; 
     font-family: 'Source Sans Pro', sans-serif; 
-    z-index: 21;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    z-index: 26;
 }
 
 #_form_3_ * { 
@@ -159,7 +176,7 @@ html {
 }
 
 #_form_3_ input[type="text"],#_form_3_ input[type="date"],#_form_3_ textarea { 
-    padding: 6px; 
+    /* padding: 6px;  */
     height: auto; 
     border: #979797 1px solid; 
     border-radius: 4px; 
@@ -224,7 +241,7 @@ html {
     font-size: 10px; 
     clear: both; 
     text-align: left; 
-    margin-top: 30px; 
+    margin-top: 10px; 
     font-weight: 100; 
 }
 
@@ -435,8 +452,8 @@ html {
 #_form_3_ { 
     margin: 0; 
     width: 100%; 
-    min-width: 100%; 
-    max-width: 100%; 
+    /* min-width: 100%; 
+    max-width: 100%;  */
     box-sizing:border-box; 
     vertical-align: middle;
 }
@@ -469,7 +486,7 @@ html {
 }
 
 #_form_3_ ._form_element { 
-    margin: 0 0 20px; 
+    margin: 0 0 10px; 
     padding: 0; 
     width: 100%; 
 }
@@ -510,8 +527,8 @@ html {
 }
 
 #_form_3_ input[type="text"] { 
-    padding-left: 10px; 
-    padding-right: 10px; 
+    /* padding-left: 10px; 
+    padding-right: 10px;  */
     font-size: 16px; 
     line-height: 1.3em; 
     -webkit-appearance: none; 
@@ -527,7 +544,7 @@ html {
 }
 
 #_form_3_ button[type="submit"] { 
-    padding: 20px; 
+    padding: 10px; 
     font-size: 1.5em; 
 }
 
@@ -573,9 +590,9 @@ html {
     display: inline-block; 
 }
 
-#_form_3_._inline-style input[type="text"],#_form_3_._inline-style input[type="date"] { 
-    padding: 10px 12px; 
-}
+/* #_form_3_._inline-style input[type="text"],#_form_3_._inline-style input[type="date"] { 
+    padding: 10px 12px;  
+} */
 
 #_form_3_._inline-style button._inline-style { 
     position:relative; 
@@ -595,6 +612,10 @@ html {
     right: 0; 
     text-align: center; 
     font-size: 18px; 
+}
+
+._x86770901 {
+    max-width: 50% !important; 
 }
 
 /*================================*/
@@ -646,12 +667,21 @@ html {
 
     .subscribe-form {
         margin: 0 auto;
-        width: 500px;
+        position: absolute;
+        width: 100%;
     }
 
     #_form_3_ {
+        height: 700px !important;
         line-height: 1.6; 
-        width:500px; 
+        margin: 0 auto;
+        position: relative;
+        transform: translateY(10%);
+        width: 500px !important; 
+    }
+
+    #_form_3_ ._form_element {
+        margin: 0 0 20px;
     }
 
 }

@@ -1,5 +1,6 @@
 // Modal Fade In & Fade Out
-let modal = $("._form_3");
+// let modal = $("._form_3");
+let modal = $(".subscribe-form");
 
 $(".subscribe-button").click(function() {
     modal.fadeIn();
